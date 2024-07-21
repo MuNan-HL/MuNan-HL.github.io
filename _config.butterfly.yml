@@ -216,7 +216,7 @@ footer:
 
 # aside (側邊欄)
 # --------------------------------------
-
+ 
 aside:
   enable: true
   hide: false
