@@ -236,8 +236,9 @@ aside:
       text: Follow Me
       link: https://github.com/xxxxxx
   card_announcement:
-    enable: false
-    content: This is my Blog
+    enable: true
+    content: 人生格言:想想你现在要做什么, 想到了就去做, 别等待, 遇到问题就解决问题. 你要相信，勤能补拙, 
+    世上无难事, 只要肯攀登. 加油!!!.
   card_recent_post:
     enable: false
     limit: 5 # if set 0 will show all
