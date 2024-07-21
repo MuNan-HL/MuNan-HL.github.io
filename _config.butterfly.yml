@@ -5,14 +5,14 @@
 nav:
   logo: # image
   display_title: true
-  fixed: false # fixed navigation bar
+  fixed: true # fixed navigation bar
 
 # Menu 目錄
 menu:
   Home: / || fas fa-home
   Archives: /archives/ || fas fa-archive
   # Tags: /tags/ || fas fa-tags
-  Categories: /categories/ || fas fa-folder-open
+  # Categories: /categories/ || fas fa-folder-open
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
@@ -226,9 +226,9 @@ aside:
   display:
     archive: true
     tag: false
-    category: true
+    category: false
   card_author:
-    enable: true
+    enable: false
     description:
     button:
       enable: false
@@ -244,7 +244,7 @@ aside:
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
-    enable: true
+    enable: false
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
