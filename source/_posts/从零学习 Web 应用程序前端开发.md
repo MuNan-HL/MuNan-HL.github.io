@@ -4,9 +4,9 @@ title: 从零学习 Web 应用程序前端开发
 这里你将学会如何进行 Web 应用程序前端开发.
 
 ## 需要掌握的相关技术栈
-- [参考资料1 教程](https://class.imooc.com/sale/javafullstack?mc\\\_marking=dcb3a278c9a2b82d158d552ba3613449&mc\\\_channel=imoocsearch)
+- [参考资料1 从零学习 Web 应用程序前端开发教程](https://class.imooc.com/sale/javafullstack?mc\\\_marking=dcb3a278c9a2b82d158d552ba3613449&mc\\\_channel=imoocsearch)
 
-- [参考资料2 教程](https://www.bilibili.com/video/BV14J4114768/?vd_source=d8f1a92a6819b609cd269c666021ba71)
+- [参考资料2 从零学习 Web 应用程序前端开发教程](https://www.bilibili.com/video/BV14J4114768/?vd_source=d8f1a92a6819b609cd269c666021ba71)
 ``` md
 > 1. HTML 超文本标记语言 读音： /haɪ/t/mɑ/l/
 
@@ -28,7 +28,7 @@ title: 从零学习 Web 应用程序前端开发
 
 > 10. XHR XMLHTTPRequest 对象 读音： ekˈs/haɪ/rɪ/
 
-> 11. nodejs JS 运行环境 读音： /nəʊd/dʒɑ/s/
+> 11. Nodejs JS 运行环境 读音： /nəʊd/dʒɑ/s/
 
 > 12. UML 组件图 读音： /u/mɑ/l/
 
@@ -1797,11 +1797,11 @@ bb dd aa cc
 
 ``` md
 > 87. 说一下浏览器的事件循环机制 和 node 事件循环机制
-- 1. 大体相同, 主要在于对宏任务和微任务的执行顺序不同.(仅限于 nodejs V11.0 之前)
+- 1. 大体相同, 主要在于对宏任务和微任务的执行顺序不同.(仅限于 Nodejs V11.0 之前)
 
-- 2. nodejs V11.0 之前, node 是只要开始执行宏任务, 会先执行所有的宏任务，再执行微任务(即使在执行宏任务期间有了新的微任务).
+- 2. Nodejs V11.0 之前, node 是只要开始执行宏任务, 会先执行所有的宏任务，再执行微任务(即使在执行宏任务期间有了新的微任务).
 
-- 3. nodejs V11.0 之后, node 是清空微任务队列后, 才会执行宏任务队列.
+- 3. Nodejs V11.0 之后, node 是清空微任务队列后, 才会执行宏任务队列.
 ```
 ``` js
 代码如下:
@@ -1839,7 +1839,7 @@ test()
 // children3
 // children3-1
 ```
-- [参考资料 说一下浏览器的事件循环机制 和 nodejs的事件循环机制](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/26)
+- [参考资料 说一下浏览器的事件循环机制 和 Nodejs的事件循环机制](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/26)
 
 
 ``` md
@@ -2208,6 +2208,11 @@ if (something) {
 - [参考资料 CSS 面试题](https://www.arryblog.com/interview/htmlcss/flex-grid-layout.html)
 
 - 个人建议: 进行 CSS 层叠样式设计前, 最好在头脑中想象出来你想要的效果.
+
+``` md
+> 0. CSS 是什么?
+- 1. CSS 层叠样式, 是用来描述 HTML 超文本标记语言或 XML 可扩展的标记语言（包括如 SVG、MathML 或 XHTML 之类的 XML 分支语言）文档的呈现方式的语言.
+```
 
 ``` md
 > 1. 什么是 CSS 盒模型 ？
@@ -2950,15 +2955,127 @@ filters: {
 
 ## axios 网络请求库相关问题
 
-## VScode 代码编辑器相关问题
+## Nodejs 运行环境相关问题
+- [参考资料1 Nodejs 运行环境教程](https://nodejs.org/zh-cn/learn/getting-started/introduction-to-nodejs)
+
+- [参考资料2 Nodejs 运行环境教程](https://developer.mozilla.org/zh-CN/docs/Learn/Server-side/Express_Nodejs/Introduction)
+
+- [参考资料3 Nodejs 运行环境教程](https://www.nodebeginner.org/index-zh-cn.html)
+
 ``` md
-> 1. VScode 代码编辑器终端无法识别 npm 命令，但是 管理员终端可以，解决措施
+> 1. Nodejs 是什么?
+- 1. Nodejs 运行环境, 是 JS 代码的运行环境, 可以让 Javascript 代码在服务端运行.
+```
+
+``` md
+> 2. Windows 怎么管理多个版本的 Nodejs
+- 通过 NVM node 版本管理工具
+
+- 设置镜像地址
+
+- 设置npm_mirror: nvm npm_mirror https://npmmirror.com/mirrors/npm/
+
+- 设置node_mirror: nvm node_mirror https://npmmirror.com/mirrors/node/
+```
+
+``` md
+> 3. NVM node 多版本管理工具的常用命令
+- nvm list
+
+- nvm -v
+
+- nvm use 8.11.0
+
+- nvm install 8.11.0
+```
+
+``` md
+> 4. 安装 nvm 后，node 和 npm 命令报错，解决办法
+- 卸载 nvm，并删除相关的 环境变量 以及 以前安装过的 Nodejs 相关版本。
+
+- 注意安装好后需要用 nvm 配置 node 和 npm 镜像地址
+```
+- [参考资料 安装配置](https://blog.csdn.net/weixin_50632313/article/details/131527057)
+
+``` md
+> 5. commonJS 是什么?
+- 1. commonJS 模块, 是 Nodejs 中的模块管理工具.
+
+- 补充知识1: 在 JS 脚本语言中有 ES6 语法新增的模块管理工具, export 导出和 import 导入. 注意和 commonJS 弄块区分, 不要混淆奥.
+
+- 补充知识2: 什么是模块? 用于完成特定功能的文件或者代码块.
+
+- 补充知识3: Nodejs 运行环境只有在执行到 require 需求函数后, 才会加载并执行模块代码.
+```
+
+``` md
+> 6. commonJS 语法
+- 1. 通过 module.exports 模块导出或 exports 导出语法, 导出模块中的属性和方法
+
+- 2. 通过 require 需求语法, 导入模块
+
+- 补充知识1: 模块只会被导入一次, 后续会使用模块缓存获取模块中的属性和方法. 为了避免反复加载同一个模块，Nodejs默认开启了模块缓存，如果加载的模块已经被加载过了，则会自动使用之前的导出结果.
+
+- 代码示例:
+```
+``` js
+// exports 导出语法:
+var count = 0; // 需要隐藏的内部实现
+
+// 要暴露给外部的接口
+function getNumber () {
+    count++;
+    return count;
+}
+
+// exports = {}
+exports.getNumber = getNumber
+exports.abc = "abc"
+```
+``` js
+// require 导入语法:
+var util = require("./util");
+
+console.log(util)
+console.log(util.abc)
+console.log(util.getNumber())
+console.log(util.getNumber())
+console.log(util.getNumber())
+console.log(util.count)
+
+// node index.js 输出
+{ getNumber: [Function: getNumber], abc: 'abc' }
+abc
+1
+2
+3
+undefined
+```
+- [参考资料 commonJS](https://juejin.cn/post/7029133831328399374)
+
+``` md
+> 7. Nodejs 和 JS 的区别?
+- 1. JS 脚本语言: JavaScript 语法 + Web API(DOM + BOM), 主要运行于客户端.
+
+- 2. Nodejs 运行环境: JavaScript 语法 + Nodejs API, 主要运行于服务端.
+```
+
+## VScode 代码编辑器相关问题
+- [参考资料 VScode 教程](https://code.visualstudio.com/)
+
+``` md
+> 1. VScode 代码编辑器是什么?
+- 1. VScode 代码编辑器是代码编辑器的一种.
+```
+
+``` md
+> 2. VScode 代码编辑器终端无法识别 npm 命令，但是 管理员终端可以，解决措施
 - 1. 修改 VScode 的属性，使其以管理员身份运行 
 ```
 - [参考资料 修改方法](https://blog.csdn.net/helwens/article/details/122082997)
 
 ``` md
-- 2. VScode 代码编辑器如何布局工具栏?
+- 3. VScode 代码编辑器如何布局工具栏?
 - 1. 长按后拖拽即可.
 
 - 2. 个人喜欢的工具栏布局: 左侧为工具栏区域, 右侧为代码编辑区域.
@@ -2969,8 +3086,14 @@ filters: {
 - [参考资料1 教程](https://git-scm.com/docs)
 
 - [参考资料2 教程](https://learngitbranching.js.org/?locale=zh_CN)
+
 ``` md
-> 1. 你怎么理解 merge 和 rebase?
+> 1. Git 是什么?
+- 1. Git 分布式版本控制系统, 是一种用于管理代码版本的工具.
+```
+
+``` md
+> 2. 你怎么理解 merge 和 rebase?
 - merge 合并分支: 会将目的分支合并到当前分支上. 优点是保留了每个分支上的完整提交历史和分支信息, 因为它会创建一个新的合并在提交, 缺点是提交树分支多. 
 
 - rebase 变基分支: 会将目的分支作为基底, 将当前分支合并到目的分支上去. 优点是提交树简洁, 没有任何分枝, 缺点是可能导致当前分支不可用. 
@@ -2981,12 +3104,17 @@ filters: {
 
 ## 浏览器开发者工具 相关问题
 ``` md
-> 1. 浏览器如何清除缓存并硬性重新加载
+> 1. 浏览器是什么?
+- 1. 浏览器, 即客户端的一种.
+```
+
+``` md
+> 2. 浏览器如何清除缓存并硬性重新加载
 - 1. 在开发者模式下，右键浏览器左上角的刷新按钮，选择清除缓存并硬性重新加载。
 ``` 
 
 ``` md
-> 2. 浏览器中如何进行调试？
+> 3. 浏览器中如何进行调试？
 - 1. 通过跨步, 下一步, 步入, 步出操作, 进行调试。
 
 - 2. 跨步, 执行下一步, 但不进入函数内部.
@@ -2996,4 +3124,70 @@ filters: {
 - 4. 步出：执行到当前函数的末尾.
 ```
 
-##
+## GitHub 远程仓库相关问题
+``` md
+> 1. GitHub 是什么?
+- 1. GitHub 远程仓库, 是第三方远程仓库, 用于存储本地 Git 仓库中的数据, 同时可以作为云服务器使用, 用于搭建个人博客.
+```
+
+``` md
+> 2. GitHub 如何配置 SSH Key?
+- 1. 本地生成 SSH Key, ssh-keygen -t rsa -C "xxx@xxx.com" // 执行后一直回车即可
+
+- 2. 查看本地公钥, cat id_rsa.pub, // 需要在当前路径下才可以在终端中查看
+
+- 3. 给 GitHub 远程仓库的 SSH 配置项处, 添加公钥.
+
+- 补充知识1: 配置 SSH 密钥, 是为了避免使用 HTTPS 连接时, 每次都要输入密码, 但是我同 VScode 没配 SSH 也只是第一次输密码了呀.
+
+- 补充知识2: SSH Key 在本地一般存储在, 本机用户/.ssh 文件下
+
+- 补充知识3: 当在本地生成 SSH Key 时, 建议提前看看本地是否已经存在 SSH Key, 到 .ssh 路径下查看
+```
+
+## 其他问题
+``` md
+> 1. 磁盘、硬盘和内存区别
+- 1. 它们都是用于保存计算机信息的硬件.
+
+- 2. 内存: 指计算机的内部存储器
+
+- 3. 外存: 指计算机的外部存储器, 如磁盘
+
+- 4. 磁盘: 指硬盘和软盘
+
+- 5. 硬盘: 指固态硬盘和机械硬盘
+
+- 6. 软盘: 如 U 盘, 一般是存放于机箱之外的.
+
+- 7. 具体分类示例:
+[
+  内存,
+
+  外存{
+    磁盘{
+      硬盘{
+        固态硬盘,
+        机械硬盘
+      },
+      软盘{
+        ...
+      }
+    },
+    ...
+  }
+]
+```
+- [参考资料 磁盘、硬盘和内存区别](https://blog.51cto.com/frankch/1708041)
+
+``` md
+> 2. 什么是框架?
+- 1. 框架: 就是一种用于解决复杂问题的结构, 具有约束性和支撑性, 其解决问题的思路是先通用后专用.
+
+- 补充知识1: 架构是什么? 也是一种用于解决复杂问题的结构, 但是其解决问题的思路是先大后小.
+```
+
+``` md
+> 3. 你怎么理解多平台?
+- 1. 多平台: 即本地, PC端, 移动端(安卓端, IOS端), 云 四个平台
+```
