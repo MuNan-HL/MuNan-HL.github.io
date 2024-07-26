@@ -48,15 +48,13 @@ title: 从零学习 Web 应用程序前端开发
 
 > 20. Git 分布式版本控制系统 
 
-> 21. SASS CSS 预处理器  读音: /s/'ɔ/s/
+> 21. Sass 语法很棒的样式表  读音: /s/'ɔ/s/
 
-> 22. SCSS SASS 语法  读音: /s/kæ/s/
+> 22. SSR 服务端渲染 Server-Side Rendering  读音: /s/si/ri/
 
-> 23. SSR 服务端渲染 Server-Side Rendering  读音: /s/si/ri/
+> 23. webpack Web 应用程序打包和部署工具  读音: /web/pack/
 
-> 24. webpack Web 应用程序打包和部署工具  读音: /web/pack/
-
-> 25. SPA 单页面应用程序 读音: /s/p/æ/
+> 24. SPA 单页面应用程序 读音: /s/p/æ/
 ```
 
 ## HTML 超文本标记语言相关问题
@@ -3102,7 +3100,7 @@ undefined
 
 - [参考资料2 merge 和 rebase](https://juejin.cn/post/7266990451964854326)
 
-## 浏览器开发者工具 相关问题
+## 浏览器 开发者工具相关问题
 ``` md
 > 1. 浏览器是什么?
 - 1. 浏览器, 即客户端的一种.
@@ -3143,6 +3141,65 @@ undefined
 - 补充知识2: SSH Key 在本地一般存储在, 本机用户/.ssh 文件下
 
 - 补充知识3: 当在本地生成 SSH Key 时, 建议提前看看本地是否已经存在 SSH Key, 到 .ssh 路径下查看
+```
+
+## Sass 语法很棒的样式表相关问题
+- [参考资料1 Sass 语法很棒的样式表教程](https://sass.nodejs.cn/)
+
+- [参考资料2 Sass 语法很棒的样式表教程](https://www.freecodecamp.org/chinese/news/the-beginners-guide-to-sass/)
+
+``` md
+> 1. Sass 是什么?
+- 1. Sass 语法很棒的样式表, 是世界上最成熟、最稳定、最强大的专业级 CSS 扩展语言.
+
+- 补充知识1: Sass（英文全称是 Syntactically Awesome Style Sheets）是一种 CSS 预处理器，使用它可以使你的 CSS 拥有超能力。
+```
+
+``` md
+> 2. SCSS 是什么?
+- 1. 是一种 Sass 的语法. Sass 还有一种语法为缩进语法. 但是 SCSS 使用的人更多.
+
+- 2. 代码示例:
+```
+``` scss
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
+}
+```
+
+``` md
+> 3. 你为什么使用 Sass ?
+- 1. 兼容性好
+
+- 2. 可以提高 CSS 开发效率(可复用)
+```
+
+``` md
+> 4. 你怎么理解 Sass 的特性?
+- 1. 嵌套
+
+- 2. $ 变量与 @function 函数
+
+- 3. @import 导入: 支持导入外部文件
+
+- 4. @mixin 混入 + @include 复用: 支持复用代码块
+```
+
+``` md
+> 5. VScode 怎么使用 Sass?
+- 通过按照对应的插件, 并修改 setting.json 文件.
 ```
 
 ## 其他问题
