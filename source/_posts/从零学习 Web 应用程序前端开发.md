@@ -55,6 +55,8 @@ title: 从零学习 Web 应用程序前端开发
 > 23. webpack Web 应用程序打包和部署工具  读音: /web/pack/
 
 > 24. SPA 单页面应用程序 读音: /s/p/æ/
+
+> 25. UI 设计
 ```
 
 ## HTML 超文本标记语言相关问题
@@ -725,11 +727,13 @@ for (let i = 0; i < 15; i++) {
 
 ``` md
 > 32. JS 中如何实现防抖和节流？
-- 1. 防抖: 在等待时间内多次触发同一事件, 则会重新计时.
+- 1. 防抖: 就是指触发事件后的等待时间中, 只会执行一次, 只执行第一次或最后一次, 如果在等待事件内再次触发, 则会重新计算等待时间.
 
-- 2. 节流: 在等待时间内多次触发同一事件, 只会触发一次.
+- 2. 节流: 就是指触发事件后的等待时间中, 只会执行一次, 如果在等待事件内再次触发, 不会重新计算等待时间. 因此节流会稀释函数的执行频率 1次/wait.
 
-- 实现方法：利用 定时器实现。
+- 补充知识1: 防抖和节流的区别在于, 防抖函数在等待时间内若再次触发事件, 会重新计算等待时间, 而节流不会.
+
+- 实现方法：利用定时器实现。
 ```
 ``` js
 // 防抖函数
@@ -2172,11 +2176,13 @@ JSON.stringify(meetup); // Error: Converting circular structure to JSON
 
 ``` md
 > 108. 你了解 JS 中的模块导出和导入吗?
-- 1. 导出: 分为 export default 默认导出, export {} 独立导出 和 export 在声明前导出.
+- 1. 导出: 分为 export default 默认导出, export {} 独立导出.
 
-- 2. 导入: 分为 import 默认导入, import {} 独立导入和 import() 动态导入, 以及 import * as "别名" 整体导入.
+- 2. 导入: 分为 import 默认导入, import {} 独立导入和 import() 动态导入.
 
 - 补充知识1: 导入存在导入提升, 因此以下代码是无效的(当需要按条件导入模块时, 建议使用动态导入)
+
+- 补充知识2: 每个文件应该只有一个 export default, 然后将其导入则不需要花括号.
 ```
 ``` js
 if (something) {
@@ -2201,9 +2207,13 @@ if (something) {
 - [参考资料 JS 中的导出和导入](https://zh.javascript.info/modules)
 
 ## CSS 层叠样式表相关问题
-- [参考资料 CSS 教程](https://developer.mozilla.org/zh-CN/docs/Web/CSS)
+- [参考资料1 CSS 层叠样式表教程](https://developer.mozilla.org/zh-CN/docs/Web/CSS)
 
-- [参考资料 CSS 面试题](https://www.arryblog.com/interview/htmlcss/flex-grid-layout.html)
+- [参考资料2 CSS 层叠样式表教程](https://tsejx.github.io/css-guidebook/concept/selector)
+
+- [参考资料3 CSS 层叠样式表教程](https://chokcoco.github.io/CSS-Inspiration/#/./layout/masonry-layout-grid?id=css-inspiration)
+
+- [参考资料 CSS 层叠样式表面试题](https://www.arryblog.com/interview/htmlcss/flex-grid-layout.html)
 
 - 个人建议: 进行 CSS 层叠样式设计前, 最好在头脑中想象出来你想要的效果.
 
