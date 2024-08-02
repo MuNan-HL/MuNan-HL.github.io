@@ -3110,6 +3110,45 @@ undefined
 
 - [参考资料2 merge 和 rebase](https://juejin.cn/post/7266990451964854326)
 
+``` md
+> 3. 如何添加远程仓库连接?
+- 1. 本地仓库存在时
+```
+``` git
+git remote add origin https://github.com/MuNan-HL/My-RuoYi-Vue3.git
+git branch -M main
+git push -u origin main
+```
+``` md
+- 2. 本地仓库不存在时
+```
+``` git
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/MuNan-HL/My-RuoYi-Vue3.git
+git push -u origin main
+```
+
+``` md
+> 4. 如何重新连接到一个新的远程仓库?
+- 1. git remote rm origin // 删除远程仓库连接
+
+- 2. git remote add origin https://github.com/MuNan-HL/My-RuoYi-Vue3.git // 添加远程仓库连接
+```
+- [参考资料 重新添加远程仓库连接](https://blog.csdn.net/lvyiwuhen/article/details/127729660)
+
+``` md
+> 5. 你会重命名本地分支吗?
+- 1. git branch -M main
+```
+
+``` md
+> 6. 怎么创建一个远程分支出来?
+- 1. 先在本地创建本地分支, 将该分支推送至远程仓库中即可.
+```
+
 ## 浏览器 开发者工具相关问题
 ``` md
 > 1. 浏览器是什么?
