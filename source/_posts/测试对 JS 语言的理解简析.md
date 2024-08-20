@@ -4,7 +4,6 @@ date: 2024-8-11
 ---
 这里将会记录常见的 JS 语言的问题, 用于测试你对 JS 语言的理解和掌握程度.  
 
-## JS 语言面试题系列
 - [参考资料 讯飞星火](https://xinghuo.xfyun.cn/desk)
 
 - [参考资料 JS 语言面试题系列](https://cchroot.github.io/interview/pages/interview%20questions/js%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98.html)
