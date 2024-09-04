@@ -584,7 +584,7 @@ const AsyncComp = defineAsyncComponent(() =>
 ``` md
 > 56. 实际工作中，你总结的 vue Web 前端框架的最佳实践有哪些？
 ```
-- [Vue3 风格指南](https://juejin.cn/post/722442621892917663)
+- [Vue2 风格指南](https://v2.cn.vuejs.org/v2/style-guide/)
 
 - [Vue3 官方风格指南](https://cn.vuejs.org/style-guide/rules-strongly-recommended#component-name-casing-in-js-jsx)
 
@@ -689,7 +689,7 @@ const AsyncComp = defineAsyncComponent(() =>
 > 73. scoped 作用域限定的作用
 - 1. 将 CSS 层叠样式限定在当前组件, 避免了样式污染.
 
-- 补充知识1, 由于 scoped 作用域限定, 因此 Vue 具有样式穿透的指令, vDeep 样式穿透, 帮助你去修改某个组件的样式.
+- 补充知识1, 由于 scoped 作用域限定, 因此 Vue 具有样式穿透的指令, vDeep 深层视图, 实现样式透传, 帮助你去修改某个组件的样式.
 ```
 
 ``` md
