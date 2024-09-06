@@ -1,13 +1,13 @@
 ---
-title: 从零学习 Web 应用程序前端开发
+title: 从零学习 Web 网站前端开发
 date: 2024-8-2
 ---
-在这里你将学会如何进行 Web 应用程序前端开发.
+在这里你将学会如何进行 Web 网站前端开发.
 
 ## 需要掌握的相关技术栈
-- [参考资料1 从零学习 Web 应用程序前端开发教程](https://class.imooc.com/sale/javafullstack?mc\\\_marking=dcb3a278c9a2b82d158d552ba3613449&mc\\\_channel=imoocsearch)
+- [参考资料1 从零学习 Web 网站前端开发教程](https://class.imooc.com/sale/javafullstack?mc\\\_marking=dcb3a278c9a2b82d158d552ba3613449&mc\\\_channel=imoocsearch)
 
-- [参考资料2 从零学习 Web 应用程序前端开发教程](https://www.bilibili.com/video/BV14J4114768/?vd_source=d8f1a92a6819b609cd269c666021ba71)
+- [参考资料2 从零学习 Web 网站前端开发教程](https://www.bilibili.com/video/BV14J4114768/?vd_source=d8f1a92a6819b609cd269c666021ba71)
 ``` md
 > 1. HTML /haɪ/t/mɑ/l/ 超文本标记语言
 
@@ -1453,7 +1453,7 @@ for (let i = 0; i < 10; i++) {
 
 ``` md
 > 61. 介绍下 ajax 及其原理
-- 1. ajax 异步网络请求技术, 即 Asynchronous JavaScript And XML，读音：ə/dʒæ/kˈs. 即异步网络请求技术，可使 Web 应用程序对用户交互的响应速度更快。可以在不重新加载整个网页的情况下，与服务器交换数据，并且更新部分网页。
+- 1. ajax 异步网络请求技术, 即 Asynchronous JavaScript And XML，读音：ə/dʒæ/kˈs. 即异步网络请求技术，可使 Web 网站对用户交互的响应速度更快。可以在不重新加载整个网页的情况下，与服务器交换数据，并且更新部分网页。
 
 - 2. Ajax 的原理简单来说通过 XHR 对象来向服务器发送网络请求，然后从服务器获得响应数据，然后用 JS 来操作 DOM 而更新页面。
 ``` 
@@ -2462,12 +2462,12 @@ if (something) {
 
 ``` md
 > 1. Vue 是什么?
-- 1. 一种 Web 应用程序前端框架, 可以高效的进行用户界面的开发.
+- 1. 一种 Web 网站前端框架, 可以高效的进行用户界面的开发.
 ```
 
 ``` md
 > 2. 有使用过 vue 吗？说说你对 vue 的理解
-- 1. 一种 Web 应用程序前端框架, 用于帮助开发人员高效的进行 Web 界面开发.
+- 1. 一种 Web 网站前端框架, 用于帮助开发人员高效的进行 Web 界面开发.
 
 - 2. Vue 的核心特性就是数据驱动, 组件化和声明式渲染.
 
