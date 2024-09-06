@@ -2,62 +2,60 @@
 title: 从零学习 Web 应用程序前端开发
 date: 2024-8-2
 ---
-这里你将学会如何进行 Web 应用程序前端开发.
+在这里你将学会如何进行 Web 应用程序前端开发.
 
 ## 需要掌握的相关技术栈
 - [参考资料1 从零学习 Web 应用程序前端开发教程](https://class.imooc.com/sale/javafullstack?mc\\\_marking=dcb3a278c9a2b82d158d552ba3613449&mc\\\_channel=imoocsearch)
 
 - [参考资料2 从零学习 Web 应用程序前端开发教程](https://www.bilibili.com/video/BV14J4114768/?vd_source=d8f1a92a6819b609cd269c666021ba71)
 ``` md
-> 1. HTML 超文本标记语言 读音： /haɪ/t/mɑ/l/
+> 1. HTML /haɪ/t/mɑ/l/ 超文本标记语言
 
-> 2. JavaScript 脚本语言 读音： /dʒɑ/s/
+> 2. JavaScript /dʒɑ/s/ 语言
 
-> 3. CSS 层叠样式表 读音： /kæ/s/ʃi/ ʃi 不发音 
+> 3. CSS /kæ/s/ʃi/ 层叠样式表(ʃi 不发音) 
 
-> 4. Vue Web 应用程序前端框架 读音： /v/u/e/
+> 4. Vue /v/u/e/ 网站前端框架
 
-> 5. Vuex Vue 框架的状态管理仓库 读音： /v/u/e/kˈs/
+> 5. Vuex /v/u/e/kˈs/ 状态管理仓库 
 
-> 6. Vue-router Vue 框架的路由 
+> 6. Vue-router 路由器
 
-> 7. axios 异步网络请求库 
+> 7. Axios 网络请求库 
+               
+> 8. Ajax /ə/dʒæ/kˈs/ 异步的 JS 语言和 XML 可扩展标记语言
 
-> 8. ajax 异步网络请求技术 读音： /ə/dʒæ/kˈs/
+> 9. HTTP /haɪ/t/træ/p/ 超文本传输协议
 
-> 9. HTTP 超文本传输协议 读音： /haɪ/t/træ/p/
+> 10. XHR /ekˈs/haɪ/rɪ/ XMLHTTPRequest 可扩展的标记语言超文本传输协议请求
 
-> 10. XHR XMLHTTPRequest 对象 读音： ekˈs/haɪ/rɪ/
+> 11. Nodejs /nəʊd/dʒɑ/s/ JS 语言运行环境
 
-> 11. Nodejs JS 运行环境 读音： /nəʊd/dʒɑ/s/
+> 12. UML /u/mɑ/l/ 统一标记语言
 
-> 12. UML 组件图 读音： /u/mɑ/l/
+> 13. Git 分布式版本控制系统
 
-> 13. Git 分布式版本控制工具 读音：/gi/t/
+> 14. VScode 代码编辑器
 
-> 14. VScode 代码编辑器 读音： /v/s/code/
+> 15. GitHub 第三方远程仓库
 
-> 15. GitHub 远程仓库 
-
-> 16. 浏览器开发者工具 
+> 16. Chrome 浏览器 
 
 > 17. 设计模式
 
-> 18. ES 6 ECMAScript 语言规范 读音： /ei/s/6/
+> 18. ES6 /ei/s/6/ 第六版 JS 语言规范
 
-> 19. GUI 渲染器引擎  读音: /ɡ/u/ɪ/
+> 19. GUI /ɡ/u/ɪ/ 图形用户界面
 
-> 20. Git 分布式版本控制系统 
+> 20. Sass /s/'ɔ/s/ 语法很棒的样式表
 
-> 21. Sass 语法很棒的样式表  读音: /s/'ɔ/s/
+> 21. SSR /se/s/ri/ 服务端渲染
 
-> 22. SSR 服务端渲染 Server-Side Rendering  读音: /s/si/ri/
+> 22. Webpack 网站打包工具
 
-> 23. webpack Web 应用程序打包和部署工具  读音: /web/pack/
+> 23. SPA /s/p/æ/ 单页面应用程序 
 
-> 24. SPA 单页面应用程序 读音: /s/p/æ/
-
-> 25. UI 设计
+> 24. UI 用户见面
 ```
 
 ## HTML 超文本标记语言相关问题
