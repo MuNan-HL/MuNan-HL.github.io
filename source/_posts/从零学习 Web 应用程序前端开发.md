@@ -67,7 +67,7 @@ date: 2024-8-2
 
 ``` md
 > 1. HTML 是什么?
-- 1. HTML 超文本标记语言, 即超文本标记语言, 一种定义网页内容的语言.
+- 1. HTML 超文本标记语言, 一种用于定义网页内容和结构的语言.
 ```
 - [参考资料 HTML 超文本标记语言](https://developer.mozilla.org/zh-CN/docs/Web/HTML)
 
@@ -81,15 +81,15 @@ date: 2024-8-2
 
 - 页面内容结构化, 没有 CSS 样式, 也能呈现出好的页面内容.
 
-- 更好的支持 SEO 浏览器引擎优化.
+- 更好的支持 SEO 搜索引擎优化.
 ```
 - [参考资料1 语义化](https://developer.mozilla.org/zh-CN/docs/Glossary/Semantics)
 
 - [参考资料2 语义化](https://github.com/YvetteLau/Step-By-Step/issues/8)
 
 ``` md
-> 3. DOCTYPE 是干嘛的，都有哪些属性
-- 1. DOCTYPE 文档类型, 即文档类型关键字, 是用来定义文档类型的, 目的是防止浏览器在渲染文档时，切换到我们称为“怪异模式”的渲染模式(即非标准模式)。
+> 3. DOCTYPE /dɒkju/taɪp/ 文档类型是干嘛的，都有哪些属性
+- 1. DOCTYPE 文档类型, 是用来定义文档类型的, 目的就是为了防止浏览器在渲染文档时，使用非标准模式进行渲染.
 
 - 2. 用法: <!DOCTYPE html>
 ```
@@ -98,8 +98,8 @@ date: 2024-8-2
 - [参考资料2 DOCTYPE](https://www.freecodecamp.org/chinese/news/what-is-the-doctype-declaration-in-html/)
 
 ``` md
-> 4. meta 标签是干什么的，都有什么属性和作用
-- 1. meta 元数据, 即元数据元素, 即元数据元素, 用来描述 HTML 文档内容的元素.
+> 4. meta /metə/ 元元素是干什么的，都有什么属性和作用
+- 1. meta 元元素, 用来描述 HTML 超文本标记语言文档的元素.
 
 - 2. 具有的属性:
 - charset 字符属性: 该属性定义了文档的字符编码。
@@ -119,10 +119,10 @@ date: 2024-8-2
 - [参考资料2 meta 元数据元素](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta#http-equiv)
 
 ``` md
-> 5. 你了解哪些 HTML5 新特性
+> 5. 你了解哪些 HTML5 第五代超文本标记语言新特性
 - 1. 元素语义化 **核心**
 
-- 2. WebStorage 本地存储 **核心**
+- 2. WebStorage 网站存储 **核心**
 
 - 3. 增强型表单
 
@@ -137,7 +137,8 @@ date: 2024-8-2
 - [参考资料 HTML5 新特性](https://juejin.cn/post/7036257361417207821)
 
 ``` md
-> 6. HTML 文档结构解释下
+> 6. HTML 超文本标记语言文档结构解释下
+- 1. 可分为三部分, 第一部分是 <html> 超文本标记语言文档元素, 第二部分是 <head> 头部元素, 第三部分是 <body> 主体元素.
 - 
 <!--定义 当前文档类型为 html5标准-->
 <!DOCTYPE html>
@@ -165,39 +166,45 @@ date: 2024-8-2
 - [参考资料 HTML 文档结构](https://www.arryblog.com/interview/htmlcss/html-html5.html#%E9%AB%98%E9%A2%91%E9%87%8D%E7%82%B9)
 
 ``` md
-> 7. 说一下 href 和 src 的区别
-- src 源资源, 即原资源属性, 主要用来指定源资源地址.
+> 7. 说一下 href 超链接引用和 src 资源的区别
+- src 资源, 是用来指定外部资源的.
 
-- href 超文本引用, 即超文本引用属性, 主要用指定引用地址.
+- href 超链接引用, 是用来指定超链接的.
 ```
-- [参考资料 href 超文本引用](https://www.w3school.com.cn/tags/att_a_href.asp)
+- [参考资料 href 超链接引用](https://www.w3school.com.cn/tags/att_a_href.asp)
 
-- [参考资料 src](https://blog.51cto.com/u_14555/6814139)
+- [参考资料 src 资源](https://blog.51cto.com/u_14555/6814139)
 
 ``` md
-> 8. script 标签放在 head 那里怎么解决加载问题
-- 1. 通过使用 defer 或 async.
+> 8. script 脚本元素放在 head 头部元素那里怎么解决加载问题
+- 1. 首先, script 脚本的加载, 分为同步加载和异步加载, 为了解决同步加载导致的阻塞问题, 我们应该使用异步加载. 
 
-- defer 延迟, 即延迟属性: 异步下载 JS 脚本, 下载完毕后, 会等待 DOM 渲染结束, 在执行该脚本.
+- 2. 那么我们可以通过使用 defer 延迟或 async 异步实现异步加载.
 
-- async 异步, 即异步属性: 异步下载 JS 脚本, 下载完毕后, 不会等待 DOM 渲染结束, 会立刻执行该脚本.
+- defer 延迟, 异步加载 JS 脚本, 但是会延迟执行.
+
+- async 异步, 异步加载 JS 脚本, 但是不会延迟执行, 会立刻执行该脚本.
 ```
 - [参考资料 defer, async](https://zh.javascript.info/script-async-defer)
 
 ``` md
 > 9. 浏览器中渲染引擎负责什么/执行过程?
-- 1. 解析  HTML 内容和 CSS 样式
+- 0. 浏览器的渲染引擎主要负责四个部分, 即解析, 渲染, 布局和绘制四步.
 
-- 2. 构建 DOM 文档对象树和 CSSOM 层的样式树, 得到 Rendor 渲染树
+- 1. 其中, 解析负责解析 HTML 超文本标记语言代码和 CSS 层叠样式表代码, 得到 DOM 文档对象模型树和 CSSOM 层叠样式表对象模型树.
 
-- 3. 布局, 计算元素的位置.
+- 2. 渲染, 主要负责得到 Render 渲染树.
 
-- 4. 绘制, 页面内容.
+- 3. 布局, 主要负责进行页面布局的计算, 计算每一个元素在页面对应的位置.
+
+- 4. 绘制, 主要负责在显示器上显示相应内容.
 ```
 - [参考资料 渲染引擎的执行过程](https://juejin.cn/post/7068097802676469773)
 
 ``` md
 > 10. 了解过不同图片格式的区别吗
+- 0. 我现在了解到的图片格式有 5 种吧, 分别是动图, 网图, 有损压缩和无损压缩图以及可伸缩矢量图.
+
 - 1. .gif 动图: 可以实现动画效果
 
 - 2. .jpg 有损压缩: 反复保存图片质量下降明显
@@ -212,9 +219,7 @@ date: 2024-8-2
 
 ``` md
 > 11. 精灵图的原理和优缺点？
-- 1. spirit 精灵图: 多张合并为一张图后形成的图, 成为 spirit 精灵图.
-
-- 2. 优点在于减少网络请求, 但是缺点也很明显, 即可维护性差.
+- 1. 首先, 精灵图就是指将多张图片合并为一张图片后所形成的图, 它的优点在于减少网络请求, 因为本来多张图现在只需要请求一次就可得到了, 但是缺点就是, 导致项目的可维护性变差.
 ```
 - [参考资料1 spirit 精灵图](https://github.com/haizlin/fe-interview/issues/55)
 
@@ -222,24 +227,22 @@ date: 2024-8-2
 
 ``` md
 > 12. "data- *" 属性的作用是什么 ？ 
-- 1. data-* 数据, 即自定义数据属性: 使得我们可以在所有的 HTML 元素上嵌入自定义数据属性. 便于实现 HTML 和 DOM 之间的私有数据交互.
+- 1. 首先, data-* 数据属性, 是一种自定义属性, 通过该属性, 使得我们可以在所有的 HTML 超文本标记语言元素上嵌入自定义数据属性. 便于实现 HTML 超文本标记语言和 DOM 文档对象模型之间的私有数据交互.
 ```
 - [参考资料1 data-* 数据属性](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Global_attributes/data-*)
 
 - [参考资料2 data-* 数据属性](https://www.arryblog.com/interview/htmlcss/html-html5.html#%E9%AB%98%E9%A2%91%E9%87%8D%E7%82%B9)
 
 ``` md
-> 13. HTML 中的 void 元素是什么 ？
-- 1. void 空, 即空元素, 即不需要关闭标签的元素.
+> 13. HTML 超文本标记语言中的 void 空元素是什么 ？
+- 1. void 空元素, 指元素的内容是空的元素, 也即不需要关闭标签的元素.
 
 - 2. 例如: <br />、<img />、<hr />
 ```
 
 ``` md
-> 13. HTML5 中的内联元素和块级元素分别有哪些 ？
-- 1. inline 内联, 即内联元素: 内联元素只占用内容绝对必要的空间, 也称行内元素.
-
-- 2. block 块级, 即块级元素: 块元素独占一行.
+> 13. HTML5 第五版超文本标记语言中的内联元素和块级元素分别有哪些 ？
+- 1. 首先, 基本的内联元素有 span 内联元素, input 输入元素, img 图像元素, a 锚点元素等..., 基本的块级元素有 div 块级元素, table 表格元素, form 表单元素, h 标题元素等...
 ```
 - [参考资料 HTML5 中的内联元素和块级元素分别有哪些 ？](https://www.arryblog.com/interview/htmlcss/html-html5.html#html-html5-%E5%9F%BA%E7%A1%80)
 
