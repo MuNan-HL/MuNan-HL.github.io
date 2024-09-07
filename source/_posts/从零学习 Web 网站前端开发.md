@@ -246,7 +246,7 @@ date: 2024-8-2
 ```
 - [参考资料 HTML5 中的内联元素和块级元素分别有哪些 ？](https://www.arryblog.com/interview/htmlcss/html-html5.html#html-html5-%E5%9F%BA%E7%A1%80)
 
-## Javascript 脚本语言相关问题
+## Javascript 语言相关问题
 - [参考资料1 Javascript 教程](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
 
 - [参考资料2 Javascript 教程](https://zh.javascript.info/)
