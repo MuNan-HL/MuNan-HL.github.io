@@ -941,6 +941,8 @@ console.log(B.getNumber());  //200
 ```
 ``` md
 - 补充知识1: 最佳实践, 实例属性和方法在构造器函数中定义, 原型方法直接定义在类中, 原型属性通过原型对象定义, 静态方法和属性之间定义在类中.
+
+- 补充知识2: 实列属性就是共有属性, 静态属性就是私有属性.
 ```
 ``` js
 class Person{
@@ -954,7 +956,7 @@ class Person{
     }
   };
 
-  // 原型方法
+  // 原型方法(ES6 第六版 JS 语言规范中定义原型方法和原型属性的最佳实践, 区别于 ES6 之前的最佳实践)
   p() {
     return 2;
   };
@@ -967,6 +969,7 @@ class Person{
     return this.num;
   };
 };
+// ES6 之前定义原型方法和原型属性的最佳实践
 Personal.prototype.temp = "原型属性";
 ```
 - [参考资料 ES6 定义类](https://blog.csdn.net/qq_51066068/article/details/124705885)
