@@ -1,5 +1,5 @@
 ---
-title: 测试你对 Axios /ˈæk.si.ɒs/络请求库的理解
+title: 测试你对 Axios 网络请求库的理解
 date: 2024-8-25
 tag: 自测系列
 ---
