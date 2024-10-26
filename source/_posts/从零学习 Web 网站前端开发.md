@@ -3048,16 +3048,16 @@ filters: {
 
 ## axios 网络请求库相关问题
 
-## Nodejs JS 语言运行环境相关问题
-- [参考资料1 Nodejs 运行环境教程](https://nodejs.org/zh-cn/learn/getting-started/introduction-to-nodejs)
+## Nodejs js 语言运行环境相关问题
+- [参考资料1 Nodejs js 运行环境教程](https://nodejs.org/zh-cn/learn/getting-started/introduction-to-nodejs)
 
-- [参考资料2 Nodejs 运行环境教程](https://developer.mozilla.org/zh-CN/docs/Learn/Server-side/Express_Nodejs/Introduction)
+- [参考资料2 Nodejs js 运行环境教程](https://developer.mozilla.org/zh-CN/docs/Learn/Server-side/Express_Nodejs/Introduction)
 
-- [参考资料3 Nodejs 运行环境教程](https://www.nodebeginner.org/index-zh-cn.html)
+- [参考资料3 Nodejs js 运行环境教程](https://www.nodebeginner.org/index-zh-cn.html)
 
 ``` md
-> 1. Nodejs JS 运行环境是什么?
-- 1. Nodejs 运行环境, 是 JS 代码的运行环境, 可以让 Javascript 代码在服务端运行.
+> 1. Nodejs js 运行环境是什么?
+- 1. Nodejs js 运行环境, 是 JS 代码的运行环境, 可以让 Javascript 代码在服务端运行.
 ```
 
 ``` md
@@ -3091,8 +3091,8 @@ filters: {
 - [参考资料 安装配置](https://blog.csdn.net/weixin_50632313/article/details/131527057)
 
 ``` md
-> 5. commonJS JS 模块管理是什么?
-- 1. commonJS JS 模块, 是 Nodejs 中的模块管理工具.
+> 5. commonJS js 模块管理是什么?
+- 1. commonJS js 模块, 是 Nodejs js 运行环境中的模块管理工具.
 
 - 补充知识1: 在 JS 脚本语言中有 ES6 语法新增的模块管理工具, export 导出和 import 导入. 注意和 commonJS 弄块区分, 不要混淆奥.
 
@@ -3102,12 +3102,13 @@ filters: {
 ```
 
 ``` md
-> 6. commonJS JS 模块管理
+> 6. commonJS js 模块管理
 - 1. 通过 module.exports 模块导出或 exports 导出语法, 导出模块中的属性和方法
 
 - 2. 通过 require 需求语法, 导入模块
 
-- 补充知识1: 模块只会被导入一次, 后续会使用模块缓存获取模块中的属性和方法. 为了避免反复加载同一个模块，Nodejs默认开启了模块缓存，如果加载的模块已经被加载过了，则会自动使用之前的导出结果.
+- 补充知识1: 模块只会被导入一次, 后续会使用模块缓存获取模块中的属性和方法. 为了避免反复加载同一个模块，
+Nodejs默认开启了模块缓存，如果加载的模块已经被加载过了，则会自动使用之前的导出结果.
 
 - 代码示例:
 ```
@@ -3147,10 +3148,10 @@ undefined
 - [参考资料 commonJS](https://juejin.cn/post/7029133831328399374)
 
 ``` md
-> 7. Nodejs 和 JS 的区别?
-- 1. JS 脚本语言: JavaScript 语法 + Web API(DOM + BOM), 主要运行于客户端.
+> 7. Nodejs js 运行环境和 JS 语言的区别?
+- 1. JS 语言: JavaScript 语法 + Web API(DOM + BOM), 主要运行于客户端.
 
-- 2. Nodejs 运行环境: JavaScript 语法 + Nodejs API, 主要运行于服务端.
+- 2. Nodejs js 运行环境: JavaScript 语法 + Nodejs API, 主要运行于服务端.
 ```
 
 ## VScode 代码编辑器相关问题
@@ -3182,18 +3183,31 @@ undefined
 
 ``` md
 > 1. Git 是什么?
-- 1. Git 分布式版本控制系统, 是一种用于管理代码版本的工具.
+- 1. Git 分布式版本控制系统, 是一种用于版本控制的工具.
 ```
 
 ``` md
-> 2. 你怎么理解 merge 和 rebase?
-- merge 合并分支: 会将目的分支合并到当前分支上. 优点是保留了每个分支上的完整提交历史和分支信息, 因为它会创建一个新的合并在提交, 缺点是提交树分支多. 
+> 2. 你怎么理解 merge 合并和 rebase 变基?
+- merge 合并: `会进行一次三方合并`, 即共同祖先, 当前分支最新提交快照和目标放在最新提交快照进行一次三方合并, `产生一个新的提交快照.`
+优点是保留了每个分支上的完整提交历史和分支信息, 因为它会创建一个新的合并在提交, 缺点也在这里, 会保留太多的提交记录.
 
-- rebase 变基分支: 会将目的分支作为基底, 将当前分支合并到目的分支上去. 优点是提交树简洁, 没有任何分枝, 缺点是可能导致当前分支不可用. 
+- rebase 变基: `以目标分支的最新快照为基底, 然后依次提取差异进行三方合并.` 每次都会产生新的提交快照.
+优点是提交树简洁, 没有任何分枝, 当然这也是其缺点, 就是提交记录不清楚.
+
+- 补充知识, `但是最终都会进行三方合并`, 但是存在着是否保留了提交历史记录的区别. 即你是不是要保留`完整的历史记录`.
+`我怎么感觉变基更好一点啊, 哈哈哈, 因为提交记录更清楚, 合并的话提交历史记录是按照时间排的, 很杂`
 ```
 - [参考资料1 merge 和 rebase](https://learngitbranching.js.org/?locale=zh_CN)
 
 - [参考资料2 merge 和 rebase](https://juejin.cn/post/7266990451964854326)
+
+- [参考资料3](https://blog.csdn.net/wpw2000/article/details/115890784)
+
+- [参考资料4](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6.html#_basic_merging)
+
+- ![Git_合并](../image/Git_合并.png)
+
+- ![Git_变基](../image/Git_变基.png)
 
 ``` md
 > 3. 如何添加远程仓库连接?
@@ -3242,7 +3256,7 @@ git push -u origin main
 
 ``` md
 > 2. 浏览器如何清除缓存并硬性重新加载
-- 1. 在开发者模式下，右键浏览器左上角的刷新按钮，选择清除缓存并硬性重新加载。
+- 1. 在开发者模式下, 右键浏览器左上角的刷新按钮, 选择清除缓存并硬性重新加载。
 ``` 
 
 ``` md
@@ -3253,7 +3267,8 @@ git push -u origin main
 
 - 2. 跨步, 执行下一步, 但不进入函数内部.
 
-- 3. 下一步和步入, 执行下一步, 但是会进入函数内部. 下一步和步入区别在于处理异步函数时, 下一步会先等待, 只有开始执行异步函数的时候才会进入. 而步入会先进入异步函数中在开始等待.
+- 3. 下一步和步入, 执行下一步, 但是会进入函数内部. 下一步和步入区别在于处理异步函数时, 
+下一步会先等待, 只有开始执行异步函数的时候才会进入. 而步入会先进入异步函数中在开始等待.
 
 - 4. 步出：执行到当前函数的末尾.
 ```
@@ -3261,11 +3276,12 @@ git push -u origin main
 ## GitHub 第三方远程仓库相关问题
 ``` md
 > 1. GitHub 第三方远程仓库是什么?
-- 1. GitHub 第三方远程仓库, 用于存储 Git 本地仓库中的数据, 同时可以作为云服务器使用, 用于搭建个人博客.
+- 1. GitHub 第三方远程仓库, 用于存储 Git 本地仓库中的数据, 同时可以作为云服务器使用, 
+也可以用于搭建个人博客.
 ```
 
 ``` md
-> 2. GitHub 如何配置 SSH Key 密钥?
+> 2. GitHub 第三方远程仓库如何配置 SSH Key 密钥?
 - 1. 本地生成 SSH Key, ssh-keygen -t rsa -C "xxx@xxx.com" // 执行后一直回车即可
 
 - 2. 查看本地公钥, cat id_rsa.pub, // 需要在当前路径下才可以在终端中查看
@@ -3288,7 +3304,8 @@ git push -u origin main
 > 1. Sass 语法很棒的层叠样式表是什么?
 - 1. Sass 语法很棒的样式表, 是世界上最成熟、最稳定、最强大的专业级 CSS 扩展语言.
 
-- 补充知识1: Sass（英文全称是 Syntactically Awesome Style Sheets）是一种 CSS 预处理器，使用它可以使你的 CSS 拥有超能力。
+- 补充知识1: Sass（英文全称是 Syntactically Awesome Style Sheets）
+是一种 CSS 预处理器，使用它可以使你的 CSS 拥有超能力。
 ```
 
 ``` md
@@ -3317,7 +3334,7 @@ nav {
 
 ``` md
 > 3. 你为什么使用 Sass 语法很棒的层叠样式表?
-- 0. 代码更易维护
+- 0. 使得 CSS 层叠样式表的代码更易维护, 且代码书写更加方便
 
 - 1. 兼容性好
 
